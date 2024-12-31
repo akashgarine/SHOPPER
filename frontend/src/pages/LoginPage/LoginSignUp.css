@@ -1,0 +1,99 @@
+.fullscreen-container {
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 60px); 
+    overflow: hidden;
+}
+
+.fullscreen-image {
+    position: absolute; /* Changed to absolute to fill the parent */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.fullscreen-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-title {
+    font-size: 18px; /* Adjust size as needed */
+    color: white; /* Light color for the title */
+    margin-bottom: 15px; /* Space between title and input fields */
+    text-align: center; /* Center align the title */
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    max-width: 250px;
+    background: rgba(16, 16, 27, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.label {
+    display: block;
+    font-size: 13px;
+    color: #d1cece;
+}
+
+.input {
+    width: 95%;
+    padding: 6px;
+    border-radius: 5px;
+    background-color: rgba(58, 59, 77, 0.8);
+    font-size: 14px;
+    color: #d1cece;
+    border: none;
+    margin: 5px 0; /* Adjust margin for spacing */
+}
+
+.input:focus {
+    outline: none;
+    border: 1px solid #2f3557;
+}
+
+.button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.signInBtn {
+    background-color: #4c59a8;
+}
+
+.signUpBtn {
+    background-color: #4c59a8;
+}
+
+.signUpMsg,
+.signInMsg {
+    color: #85869a;
+    font-size: 14px;
+    margin-left: 18px;
+}
+
+.signUptag,
+.signInTag {
+    background: none;
+    border: none;
+    color: rgb(201, 193, 193);
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px;
+}
